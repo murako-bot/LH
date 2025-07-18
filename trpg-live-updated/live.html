@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>演出分岐中…</title>
+  <script>
+    const visitCount = localStorage.getItem('amane_live_visited') || 0;
+    const count = parseInt(visitCount) + 1;
+    localStorage.setItem('amane_live_visited', count);
+
+    if (count === 1) {
+      window.location.href = "live_first.html";
+    } else if (count === 2) {
+      window.location.href = "live_second.html";
+    } else {
+      window.location.href = "live_final.html";
+    }
+  </script>
+</head>
+<body>
+  <p>ロード中...</p>
+</body>
+</html>

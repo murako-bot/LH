@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>LIVE - 異常空間</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: url("assets/crowd_amane_loop.gif") center/cover no-repeat;
+    }
+    .overlay-red {
+      position: fixed;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      background: rgba(255, 0, 0, 0.1);
+      mix-blend-mode: screen;
+      pointer-events: none;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 0.1; }
+      50% { opacity: 0.3; }
+      100% { opacity: 0.1; }
+    }
+    .statue {
+      position: fixed;
+      width: 100px;
+      opacity: 0.8;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay-red"></div>
+  <h1 style="text-align:center;">L!ʌƐ HΣΔЯ†</h1>
+  <p style="text-align:center;">……きこえる？わたしのこえ</p>
+  <img src="assets/statue1.png" class="statue" style="top: 0; left: 0;">
+  <img src="assets/statue2.png" class="statue" style="top: 0; right: 0;">
+  <img src="assets/statue3.png" class="statue" style="bottom: 0; left: 0;">
+  <img src="assets/statue4.png" class="statue" style="bottom: 0; right: 0;">
+  <audio autoplay loop>
+    <source src="assets/broken_song.mp3" type="audio/mpeg">
+  </audio>
+  <audio autoplay loop>
+    <source src="assets/whisper.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
